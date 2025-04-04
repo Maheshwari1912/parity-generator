@@ -1,0 +1,12 @@
+module odd_parity_tb();
+reg [7:0] data_in;
+wire data_out;
+odd_parity dut (data_in,data_out);
+initial begin
+data_in=8'd25;#10;
+data_in=8'd34;#10;
+data_in=8'd23;#10;
+data_in=8'd56;#10;
+$stop;
+end
+endmodule
