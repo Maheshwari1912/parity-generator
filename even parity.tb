@@ -1,0 +1,12 @@
+module even_parity_tb();
+reg [7:0] in;
+wire out;
+even_parity dut(in,out);
+initial begin
+in=8'd25;#10;
+in=8'd34;#10;
+in=8'd23;#10;
+in=8'd56;#10;
+$stop;
+end
+endmodule
